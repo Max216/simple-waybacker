@@ -65,11 +65,11 @@ will always use the cached result and not query the Wayback engine again (unless
 
 **Arguments**
 
-| Name                   | Description                                                                               | Example                                                                          |
-|------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| ``url``                | The URL to the live webpage that will be collected from Wayback.                          | ``"'https://www.wired.com/story/women-in-science-sabrina-gonzalez-pasterski/'"`` |
-| ``retry_unsuccessful`` | Force to retry collecting URLs where previous errors occurred.                            | `True`                                                                           |
-| ``overwrite_entry``    | Force to re-load and overwrite each URL entry. **Warning: You may lose reproducibility.** | `True`                                                                           |
+| Name                   | Description                                                                               | Example                                                                        |
+|------------------------|-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| ``url``                | The URL to the live webpage that will be collected from Wayback.                          | ``"https://www.wired.com/story/women-in-science-sabrina-gonzalez-pasterski/"`` |
+| ``retry_unsuccessful`` | Force to retry collecting URLs where previous errors occurred.                            | `True`                                                                         |
+| ``overwrite_entry``    | Force to re-load and overwrite each URL entry. **Warning: You may lose reproducibility.** | `True`                                                                         |
 
 
 ## ``Waybacker.lookup()``
@@ -78,9 +78,9 @@ Returns the corresponding `WaybackEntry` if it exists (or `None`).
 
 **Arguments**
 
-| Name                   | Description                                     | Example                                                                          |
-|------------------------|-------------------------------------------------|----------------------------------------------------------------------------------|
-| ``url``                | The URL to to lookup in the collected webpages. | ``"'https://www.wired.com/story/women-in-science-sabrina-gonzalez-pasterski/'"`` |
+| Name                   | Description                                     | Example                                                                        |
+|------------------------|-------------------------------------------------|--------------------------------------------------------------------------------|
+| ``url``                | The URL to to lookup in the collected webpages. | ``"https://www.wired.com/story/women-in-science-sabrina-gonzalez-pasterski/"`` |
 
 
 
@@ -90,10 +90,10 @@ Internally, this method calls ``.get()`` for every URL, i.e. it will attempt to 
 
 **Arguments**
 
-| Name     | Description                         | Example                                                                          |
-|----------|-------------------------------------|----------------------------------------------------------------------------------|
-| ``urls`` | List of URLs that will be exported. | ``"'https://www.wired.com/story/women-in-science-sabrina-gonzalez-pasterski/'"`` |
-| ``dest_path`` | Filepath of the resulting CSV file. | ``"/path/to/exported.csv"``                                                      |
+| Name     | Description                         | Example                                                                        |
+|----------|-------------------------------------|--------------------------------------------------------------------------------|
+| ``urls`` | List of URLs that will be exported. | ``"https://www.wired.com/story/women-in-science-sabrina-gonzalez-pasterski/"`` |
+| ``dest_path`` | Filepath of the resulting CSV file. | ``"/path/to/exported.csv"``                                                    |
 
 **Example:**
 ````python
